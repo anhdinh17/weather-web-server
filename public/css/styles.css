@@ -1,0 +1,68 @@
+body{
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    /* using flex box to make footer at bottom of the page */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* make body height to match browser page*/
+}
+
+.main-content{
+    flex-grow: 1;/*this tell flex box that the main-content takes all left over space*/
+}
+
+footer{
+    color: #888888;
+    border-top:1px solid #601d1d;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* target links inside header */
+header a{
+    color: #b728bf;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+#p-header{
+    color:#717e1c;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.portrait{
+    width: 250px;
+}
+
+header p{
+    color: #9e1212;
+    font-size: 40px;
+}
+
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/weather2.png">
+</head>
+
+<body>
+    {{!-- Create a div and put header inside, use this way
+    to make the footer at the bottom of the page, check css file to udnderstand
+    flex box way.
+     --}}
+    <div class="main-content">
+        {{>header}}
+        <!--file name of partials header-->
+
+        <p id="p-header">{{name}}</p>
+        <img class="portrait" src="/img/ironman.jpg">
+    </div>
+
+    {{>footer}}
+    <!--file name of partials footer-->
+</body>
+
+</html>

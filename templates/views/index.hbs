@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather</title>
+
+    <!--link for css file -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="icon" href="/img/weather2.png">
+    <!--link for icon image -->
+</head>
+
+<body>
+    {{!-- Create a div and put header inside, use this way
+    to make the footer at the bottom of the page, check css file to udnderstand
+    flex box way.
+     --}}
+    <div class="main-content">
+        {{>header}}
+        <!-- syntax of using partials files -->
+        <!--file name of partials -->
+
+        <p>Use this site to get your weather!</p>
+
+        <!--form of button and input -->
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+    <!--file name of partials -->
+
+    <script src="/js/app.js"></script>
+</body>
+
+
+</html>
