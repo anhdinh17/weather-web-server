@@ -8,6 +8,9 @@ const forecast = require('./utils/forecast');
 // create an application to use express
 const app = express()
 
+// create port to use for herok
+const port = porcess.env.PORT || 3000;
+
 // __dirname is to get the directory of this file
 // .. is to go back 1 level, /public is to go to public folder
 // this is to let express know that we create a 'public' folder
@@ -123,6 +126,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is up on port 3000');
 })
