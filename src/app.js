@@ -9,7 +9,7 @@ const forecast = require('./utils/forecast');
 const app = express()
 
 // create port to use for herok
-const port = porcess.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 // __dirname is to get the directory of this file
 // .. is to go back 1 level, /public is to go to public folder
