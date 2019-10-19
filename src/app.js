@@ -46,7 +46,7 @@ app.use(express.static(publicDirectoryPath))
 // run index.hbs file as root route 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Root Page',
+        title: 'Global Weather',
         name: "Alex"
     })// the parameter must match the name of the hbs file which is 'index'
     // title and name will be injected in index.hbs
